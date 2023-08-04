@@ -1,0 +1,108 @@
+
+/* WE HAVE DECLARE COLOR AS VARIABLES WHICH CAN BE USED LATER */
+:root{
+    --headclr:blue;
+    --bgclr:white;
+    --txtclr:white;
+    --padding:20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+header{
+    background-color: var(--headclr);
+    color: var(--txtclr);
+  padding: var(--padding);
+}
+header h1{
+    font-size: 40px;
+}
+main{
+    min-height: 80vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--padding);
+
+}
+main form{
+display: flex;
+justify-content: center;
+
+}
+
+form input{
+    flex-grow: 1;;
+}
+
+input , button{
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px;
+}
+button{
+    background-color: var(--headclr);
+    margin-left: 15px;
+    color: var(--txtclr);
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--headclr);
+    color: var(--txtclr);
+    text-align: center;
+    padding: var(--padding);
+    font-size: 20px;
+    /* position: fixed; */
+}
+
+.result{
+    background-color: rgb(201, 225, 245);
+    padding:40px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 15px rgb(158, 158, 254);
+    border-radius: 10px;
+}  
+
+#btn{
+    color: var(--txtclr);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#pos{
+    font-style: italic;
+    color: rgb(93, 95, 98);
+}
+p{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:388px){
+    main form{
+        flex-direction: column;
+    }
+
+    form button{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+}
